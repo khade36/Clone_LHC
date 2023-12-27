@@ -1,0 +1,76 @@
+<head>
+    <link rel="stylesheet" href="register.css">
+<script>
+function reply(){
+    alert("Thank you for getting in touch, we always try our best to respond as soon as possible, you can expect a reply in at most 48 hours.");
+    location.replace("http://localhost:3000/home");
+}
+</script>   
+</head>    
+<header>
+    <a href="/home" class="logo">LinguistHubs</a>
+    <!-- <nav>
+        <ul>
+            <li><a href="register">Join Us</a></li> -->
+        <!-- </ul> -->
+    <!-- </nav>  -->
+</header>
+<div class="container">
+    <!-- <img src="images/curve.png" class="wave"> -->
+    <div class="title">
+        <p style="color:black;">Registration</p>
+    </div>
+
+    <form method="POST" action="/post-feedback">
+        <div class="user_details">
+            <div class="input_box">
+                <label for="name">First Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your first name" required>
+            </div>
+            <div class="input_box">
+                <label for="username">Last Name</label>
+                <input type="text" name="username" id="username" placeholder="Enter your last name" required>
+            </div>
+            <div class="input_box">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input_box">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" placeholder="Enter your number" required>
+            </div>
+            <div class="input_box">
+                <label for="pass">Address</label>
+                <input type="password" id="pass" name="password" placeholder="Enter your address" required>
+            </div>
+            <div class="input_box">
+                <label for="confirmPass">Language</label>
+                <input type="password" id="confirmPass" name="confirmPass" placeholder="Enter your language" required>
+            </div>
+        </div>
+        <div class="gender">
+            <span class="gender_title">Gender</span>
+            <input type="radio" name="gender" id="radio_1">
+            <input type="radio" name="gender" id="radio_2">
+            <input type="radio" name="gender" id="radio_3">
+
+            <div class="category">
+                <label for="radio_1">
+                    <span class="dot one" name="radio_1"></span>
+                    <span>Male</span>
+                </label>
+                <label for="radio_2">
+                    <span class="dot two" name="radio_2"></span>
+                    <span>Female</span>
+                </label>
+                <label for="radio_3">
+                    <span class="dot three" name="radio_3"></span>
+                    <span>Prefer not to say</span>
+                </label>
+            </div>
+        </div>
+        <div class="reg_btn">
+            <input type="submit" value="submit" onclick="reply()">
+        </div>
+    </form> 
+</div>  
