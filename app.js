@@ -4,7 +4,7 @@ var mongoose=require('mongoose');
 const app=express();
 const user=require('./register/user');
 const fs=require('fs');
-mongoose.connect('mongodb://127.0.0.1:27017/user_list')
+mongoose.connect('mongodb+srv://linguisthubs_:9881935964Ak@cluster0.u7fo1lb.mongodb.net/?retryWrites=true&w=majority')
 .then(()=>{
     console.log("data connected");
 }).catch((e)=>{
